@@ -24,7 +24,7 @@ function insertBooks($publishDate, $isbn, $bookID, $authID, $rating, $price) {
         $stmt = $conn->prepare(
             "INSERT INTO book_author (PublishDate, ISBN, BA_booksID, BA_authorsID, Rating, Price) VALUES (?, ?, ?, ?, ?, ?)"
         );
-        $stmt->bind_param("ssiiii", $publishDate, $isbn, $bookID, $authID, $rating $price);
+        $stmt->bind_param("ssiiii", $publishDate, $isbn, $bookID, $authID, $rating, $price);
         $stmt->execute();
         $conn->close();
         return true;
