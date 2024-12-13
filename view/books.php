@@ -5,10 +5,20 @@
   <span style="color: violet; font-size: 20px; display: inline-block;">Books</span>
 </div>
 
+<script src="/path/to/masonry.pkgd.min.js"></script>
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+
 <div class="card-group">
 <?php
 while ($book = $books->fetch_assoc()) {
 ?> 
+  <div class="grid">
+  <div class="grid-item">...</div>
+  <div class="grid-item grid-item--width2">...</div>
+  <div class="grid-item">...</div>
+    ...
+  </div>
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"> <?php echo htmlspecialchars($book['BookTitle']); ?> </h5>
