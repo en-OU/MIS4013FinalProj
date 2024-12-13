@@ -24,8 +24,8 @@ if (isset($_POST['actionType'])) {
         }
     break;
 
-    case "Edit": 
-        if( updateBooks($_POST['baID'], $_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'])) {
+        case "Edit": 
+        if( updateBooks($_POST['baID'], $_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'], $_POST['rating'], $_POST['price'])) {
             echo '<div class="alert alert-success" role="alert">
             Record successfully edited within the database! Refresh the page.
         </div>';
