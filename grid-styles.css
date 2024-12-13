@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.grid-item {
+  width: calc(100% - 220px); 
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.grid-item img {
+  width: 200px;
+  height: auto;
+  margin-right: 15px; 
+}
