@@ -8,10 +8,10 @@
 <script src="/path/to/masonry.pkgd.min.js"></script>
 
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-  <div class="grid"<h5 class="grid-title"> <?php echo htmlspecialchars($book['BookTitle']); ?> </h5>>
   <?php
     while ($book = $books->fetch_assoc()) {
   ?> 
+  <h5 class="grid-title"> <?php echo ($book['BookTitle']); ?> </h5>
   <div class="grid-item">
     <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
   </div>
