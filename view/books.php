@@ -11,7 +11,7 @@ while ($book = $books->fetch_assoc()) {
 ?> 
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?php echo $author['AuthorLN']; ?></h5>
+      <h5 class="card-title"><?php echo $book['AuthorLN']; ?></h5>
       <p class="card-text">
       <ul class="list-group">
      <p class="card-text"><small class="text-body-secondary">Full Name: <?php echo $book['AuthorFN']; ?> <?php echo $book['AuthorLN']; ?></small></p>
