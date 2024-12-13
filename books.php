@@ -4,16 +4,16 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once("util-db.php");
-require_once("model-book-author.php");
+require_once("model-books.php");
 
-$pageTitle = "Book_Author";
+$pageTitle = "Books";
 include "header.php";
 
 if (isset($_POST['actionType'])) {
     
     switch ($_POST['actionType']) {
     case "Add": 
-        if( insertBookAuthor($_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'])) {
+        if( insertBooks($_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'])) {
             echo '<div class="alert alert-success" role="alert">
             Record successfully added to the database!
         </div>';
@@ -25,7 +25,7 @@ if (isset($_POST['actionType'])) {
     break;
 
     case "Edit": 
-        if( updateBookAuthor($_POST['baID'], $_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'])) {
+        if( updateBooks($_POST['baID'], $_POST['publishDate'], $_POST['isbn'], $_POST['bookID'], $_POST['authID'])) {
             echo '<div class="alert alert-success" role="alert">
             Record successfully edited within the database! Refresh the page.
         </div>';
@@ -39,7 +39,7 @@ if (isset($_POST['actionType'])) {
     break;
         
     case "Delete": 
-        if(deleteBookAuthor($_POST['baID'])) {
+        if(deleteBooks($_POST['baID'])) {
             echo '<div class="alert alert-success" role="alert">
             Record successfully deleted from the database!
         </div>';
@@ -58,8 +58,7 @@ if (!$conn)
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$bookauthors = selectBookAuthor($conn);
+$books = selectBooks($conn);
 
-include "view-book-author.php";
-include "footer.php";
+include "view-books.php";
 ?>
