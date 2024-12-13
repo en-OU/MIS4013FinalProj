@@ -28,3 +28,6 @@
      <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
    </div>
 </div>
+<?php 
+    }
+?>
