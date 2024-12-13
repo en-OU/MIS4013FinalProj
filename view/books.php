@@ -18,7 +18,7 @@ while ($book = $books->fetch_assoc()) {
 
         
       <?php
-        $books = selectBooksByAuthor($author['AuthorID']);
+        $books = selectBook($book['BookID']);
         while ($book = $books->fetch_assoc()) {
       ?>
       <li class="list-group-item"><?php echo $book['BookTitle']; ?> - <?php echo $book['PublishDate']; ?>
