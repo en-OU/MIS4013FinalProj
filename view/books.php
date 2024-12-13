@@ -18,7 +18,7 @@
     while ($book = $books->fetch_assoc()) {
   ?> 
   <div class >
-      <img src="ADEcover.jpg">
+      <img src="ADEcover.jpg" style="height: auto; margin-right: 10px; object-fit: contain;>
   </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
   </div>
