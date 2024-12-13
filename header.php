@@ -17,16 +17,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php"><span style="color: #006400;">Home</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="books.php"><span style="color:#006400;">Books</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="store-locations.php">Store Locations</a>
+          <a class="nav-link" href="store-locations.php"><span style="color: #006400;">Store Locations</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="genres.php">Genres</a>
+          <a class="nav-link" href="genres.php"><span style="color: #006400;">Genres</span></a>
         </li>
       </ul>
     </div>
