@@ -8,7 +8,7 @@
 
 .grid-item {
   width: calc(100% - 220px); 
-  max-width: 800px;
+  max-width: 200px;
   display: flex;
   align-items: center;
   padding: 15px;
