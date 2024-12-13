@@ -1,8 +1,10 @@
+
 <?php
 function selectBooks() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("Select BookID, BookTitle, B_GenreID from books;");
+        $stmt = $conn->prepare("select Book_AuthorID, PublishDate, ISBN, BA_booksID, BA_authorsID, Rating, Price
+                                from book_author");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -13,26 +15,29 @@ function selectBooks() {
     }
 }
 
-function insertBooks($bTitle,$bGenreID) {
+function insertBooks($publishDate, $isbn, $bookID, $authID, $rating, $price) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO books (`BookTitle`, `B_GenreID`) VALUES (?,?) ");
-        $stmt->bind_param("ss", $bTitle, $bGenreID);
-        $success = $stmt->execute();
-        $result = $stmt->get_result();
+        $stmt = $conn->prepare(
+            "INSERT INTO book_author (PublishDate, ISBN, BA_booksID, BA_authorsID, Rating, Price) VALUES (?, ?, ?, ?, ?, ?)"
+        );
+        $stmt->bind_param("ssiiii", $publishDate, $isbn, $bookID, $authID, $rating $price);
+        $stmt->execute();
         $conn->close();
-        return $success;
+        return true;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
     }
 }
 
-function updateBooks($bID, $bTitle, $bGenreID) {
+
+function updateBooks($baID, $publishDate, $isbn, $bookID, $authID, $rating, $price) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `4013hw3db`.`books` SET `BookTitle` = ?, `B_GenreID` = ? WHERE (`BookID` = ?)");
-        $stmt->bind_param("sii", $bTitle, $bGenreID, $bID);
+        $stmt = $conn->prepare("UPDATE `4013hw3db`.`book_author` SET `PublishDate` = ?, `ISBN` = ?, `BA_booksID` = ?, `BA_authorsID` = ? WHERE (`Book_AuthorID` = ?);
+");
+        $stmt->bind_param("ssiiiii", $publishDate, $isbn, $bookID, $authID, $baID, $rating, $price);
         $success = $stmt->execute();
         $stmt->close();
         $conn->close();
@@ -44,11 +49,11 @@ function updateBooks($bID, $bTitle, $bGenreID) {
 }
 
 
-function deleteBooks($bID) {
+function deleteBooks($baID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from books where BookID = ?");
-        $stmt->bind_param("i", $bID);
+        $stmt = $conn->prepare("delete from book_author where Book_AuthorID = ?");
+        $stmt->bind_param("i", $baID);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
