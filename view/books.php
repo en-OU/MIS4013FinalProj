@@ -17,8 +17,9 @@
   <?php
     while ($book = $books->fetch_assoc()) {
   ?> 
-  <div>
-      <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
+  <div class >
+      <img/>
+    <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
   </div>
   <div class="grid-item">
     <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
