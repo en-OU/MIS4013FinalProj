@@ -22,24 +22,6 @@
         <li class="nav-item">
           <a class="nav-link" href="books.php">Book Titles</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="genres.php">Genres</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="authors.php">Authors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="book-author.php">Book_Author</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="books-with-authors.php">Books with Author</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="books-with-genres.php">Books with Genre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="authors-chart.php">Authors Chart</a>
-        </li>
       </ul>
     </div>
   </div>
