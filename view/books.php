@@ -14,11 +14,11 @@ while ($book = $books->fetch_assoc()) {
       <h5 class="card-title"><?php echo $author['AuthorLN']; ?></h5>
       <p class="card-text">
       <ul class="list-group">
-     <p class="card-text"><small class="text-body-secondary">Full Name: <?php echo $author['AuthorFN']; ?> <?php echo $author['AuthorLN']; ?></small></p>
+     <p class="card-text"><small class="text-body-secondary">Full Name: <?php echo $book['AuthorFN']; ?> <?php echo $book['AuthorLN']; ?></small></p>
 
         
       <?php
-        $books = selectBook($book['BookID']);
+        $books = selectBooks($book['BookID']);
         while ($book = $books->fetch_assoc()) {
       ?>
       <li class="list-group-item"><?php echo $book['BookTitle']; ?> - <?php echo $book['PublishDate']; ?>
