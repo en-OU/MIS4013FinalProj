@@ -20,12 +20,14 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="books.php">Book Titles</a>
+          <a class="nav-link" href="books.php">Books</a>
         </li>
       </ul>
     </div>
   </div>
-
-    <link rel="icon" href="FProjHeader.png"/>
     
 </nav>
+    
+    <link rel="icon" href="FProjHeader.png"/>
+    
+</body>
