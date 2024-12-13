@@ -7,12 +7,7 @@
     <link rel="icon" href="TCDoorlogo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
-    <div>
-      <img src="FProjHeader.png"/>
-      <span style="color: pink; font-size: 50px; display: inline-block;">Final MIS-4013 Project</span>
-    </div>
-    
+  <body>    
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -30,7 +25,10 @@
       </ul>
     </div>
   </div>
-    
 </nav>
+
+<div>
+    <img src="FProjHeader.png"/>
+</div>
     
 </body>
