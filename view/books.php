@@ -11,8 +11,12 @@
 
 <body>
 <script src="/path/to/masonry.pkgd.min.js"></script>
-<h1>Masonry - columnWidth</h1>
-
+<script>
+  $('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 160
+});
+</script>
 
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
   <?php
