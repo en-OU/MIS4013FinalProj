@@ -1,6 +1,5 @@
 .grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   flex-wrap: wrap;
   gap: 20px; 
   justify-content: space-between;
