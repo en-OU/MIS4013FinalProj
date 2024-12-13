@@ -3,8 +3,11 @@
 function selectBooks() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("select Book_AuthorID, PublishDate, ISBN, BA_booksID, BA_authorsID, Rating, Price
-                                from book_author");
+        $stmt = $conn->prepare("select BookTitle, CONCAT(AuthorFN, ' ', AuthorLN) as Author_Name, Book_AuthorID, PublishDate, ISBN, BA_booksID as BookID, BA_authorsID as AuthorID, Rating, Price
+                                from book_author JOIN books
+                                ON BA_booksID = BookID
+                                JOIN authors 
+                                ON BA_authorsID = AuthorID");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
