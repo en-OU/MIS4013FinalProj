@@ -28,7 +28,7 @@
 </nav>
 
 <div>
-     <img src="your-image.jpg" style="width: 100%; object-fit: cover;">
+     <img src="FinalProjTCHeader.png" style="width: 100%; object-fit: cover;">
 </div>
     
 </body>
