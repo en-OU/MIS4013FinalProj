@@ -18,23 +18,29 @@
     while ($book = $books->fetch_assoc()) {
   ?> 
   <div class >
-      <img/>
+      <img src="ADEcover.jpg">
+  </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
   </div>
   <div class="grid-item">
-    <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
+    <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small>
+  </br>
   </div>
   <div class="grid-item grid-item--width2">
-    <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small><br>
+    <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small>
+    </br>
   </div>
   <div class="grid-item">
     <small class="text-body-secondary">ISBN: <?php echo ($book['ISBN']); ?></small>
+    </br>
   </div>
     <div class="grid-item">
       <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
+      </br>
     </div>
    <div>
      <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
+     </br>
    </div>
 </div>
 <?php 
