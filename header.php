@@ -25,4 +25,7 @@
       </ul>
     </div>
   </div>
+
+    <link rel="icon" href="FProjHeader.png"/>
+    
 </nav>
