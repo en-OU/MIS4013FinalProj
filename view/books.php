@@ -13,10 +13,11 @@
 <script src="/path/to/masonry.pkgd.min.js"></script>
 <h1>Masonry - columnWidth</h1>
 
-<?php
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+  <?php
     while ($book = $books->fetch_assoc()) {
   ?> 
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
   <div class="grid-item" >
       <img src="ADEcover.jpg" style="height: auto; margin-right: 10px; object-fit: contain;>
   </br>
@@ -34,11 +35,10 @@
      <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
    </div>
 </div>
-
-</div>
 <?php 
     }
 ?>
+</div>
 
 </body>
 </html>
