@@ -2,12 +2,12 @@
   <span style="font-weight: bold; color: blue; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 15px;">Books with Authors</span>
   <br/>
   <br/>
-  <span style="color: violet; font-size: 20px; display: inline-block;">Books organized by Author</span>
+  <span style="color: violet; font-size: 20px; display: inline-block;">Books</span>
 </div>
 
 <div class="card-group">
 <?php
-while ($author = $authors->fetch_assoc()) {
+while ($book = $books->fetch_assoc()) {
 ?> 
   <div class="card">
     <div class="card-body">
