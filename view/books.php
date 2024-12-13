@@ -34,10 +34,11 @@
      <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
    </div>
 </div>
+
+</div>
 <?php 
     }
 ?>
-</div>
 
 </body>
 </html>
