@@ -8,24 +8,35 @@
 <script src="/path/to/masonry.pkgd.min.js"></script>
 
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-
+  <div class="grid"<h5 class="grid-title"> <?php echo htmlspecialchars($book['BookTitle']); ?> </h5>>
+  <?php
+    while ($book = $books->fetch_assoc()) {
+  ?> 
+  <div class="grid-item">
+    <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
+  </div>
+  <div class="grid-item grid-item--width2">
+    <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small><br>
+  </div>
+  <div class="grid-item">
+    <small class="text-body-secondary">ISBN: <?php echo ($book['ISBN']); ?></small>
+  </div>
+    <div class="grid-item">
+      <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
+    </div>
+   <div>
+     <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
+   </div>
+</div>
+  
 <div class="card-group">
 <?php
 while ($book = $books->fetch_assoc()) {
 ?> 
-  <div class="grid">
-  <div class="grid-item">...</div>
-  <div class="grid-item grid-item--width2">...</div>
-  <div class="grid-item">...</div>
-    ...
-  </div>
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"> <?php echo htmlspecialchars($book['BookTitle']); ?> </h5>
       <p class="card-text">
-        <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
-        <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small><br>
-        <small class="text-body-secondary">ISBN: <?php echo ($book['ISBN']); ?></small>
         <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
         <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
       </p>
