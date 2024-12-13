@@ -1,7 +1,6 @@
 
 <?php
 require_once("util-db.php");
-require_once("model-store-locations-chart-db.php");
 
 $pageTitle = "Store Locations";
 include "header.php";
@@ -14,6 +13,5 @@ if (!$conn)
 
 $authors = selectStores($conn);
 
-include "view-store-locations-chart.php";
-include "footer.php";
+include "view/store-locations-chart.php";
 ?>
