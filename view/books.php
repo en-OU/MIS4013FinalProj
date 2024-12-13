@@ -13,11 +13,11 @@ while ($book = $books->fetch_assoc()) {
     <div class="card-body">
       <h5 class="card-title"> <?php echo htmlspecialchars($book['BookTitle']); ?> </h5>
       <p class="card-text">
-        <small class="text-body-secondary">Author: <?php echo htmlspecialchars($book['Author_Name']); ?></small><br>
-        <small class="text-body-secondary">Publish Date: <?php echo htmlspecialchars($book['PublishDate']); ?></small><br>
-        <small class="text-body-secondary">ISBN: <?php echo htmlspecialchars($book['ISBN']); ?></small>
-        <small class="text-body-secondary">ISBN: <?php echo htmlspecialchars($book['Price']); ?></small>
-        <small class="text-body-secondary">ISBN: <?php echo htmlspecialchars($book['Rating']); ?></small>
+        <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small><br>
+        <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small><br>
+        <small class="text-body-secondary">ISBN: <?php echo ($book['ISBN']); ?></small>
+        <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
+        <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
       </p>
     </div>
   </div>
