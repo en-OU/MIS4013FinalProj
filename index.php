@@ -9,7 +9,3 @@ include "header.php";
 </br>
   <span style="color: pink; font-size: 50px; display: inline-block;">Homework 5 - Emily Newby</span>
 </div>
-
-<?php
-include "footer.php";
-?>
