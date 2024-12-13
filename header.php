@@ -22,6 +22,12 @@
         <li class="nav-item">
           <a class="nav-link" href="books.php">Books</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store-locations.php">Store Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="genres.php">Genres</a>
+        </li>
       </ul>
     </div>
   </div>
