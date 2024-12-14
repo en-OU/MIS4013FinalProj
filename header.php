@@ -26,7 +26,7 @@
           <a class="nav-link" href="store-locations-chart.php"><span style="color: #006400;">Store Locations Chart</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="genres.php"><span style="color: #006400;">Genres</span></a>
+          <a class="nav-link" href="books-with-genres.php"><span style="color: #006400;">By Genre</span></a>
         </li>
       </ul>
     </div>
