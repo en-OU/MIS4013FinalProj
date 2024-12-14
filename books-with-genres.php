@@ -27,5 +27,5 @@ try {
     exit;
 }
 
-include "view/books-with-genre.php";
+include "view/books-with-genres.php";
 ?>
