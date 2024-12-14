@@ -28,6 +28,9 @@
         <li class="nav-item">
           <a class="nav-link" href="books-with-genres.php"><span style="color: #006400;">By Genre</span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.php"><span style="color: #006400;">Cart</span></a>
+        </li>
       </ul>
     </div>
   </div>
