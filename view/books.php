@@ -36,7 +36,7 @@
     while ($book = $books->fetch_assoc()) {
   ?> 
   <div class="grid-item" >
-    <img src="ADEcover.jpg" style="height: auto; margin-right: 10px; object-fit: contain;">
+    <img src="ADEcover.jpg" style="width: 100%; height: auto; object-fit: contain;">
     </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
       </br>
