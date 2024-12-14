@@ -7,7 +7,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once("util-db.php");
-require_once("model-books-with-genres.php");
+require_once("model/books-with-genres.php");
+require_once("model/books.php");
+
 
 $pageTitle = "Books with Genres";
 include "header.php";
@@ -21,5 +23,4 @@ if (!$conn)
 $genres = selectGenres($conn);
 
 include "view-books-with-genres.php";
-include "footer.php";
 ?>
