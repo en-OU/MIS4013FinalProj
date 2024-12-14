@@ -22,14 +22,18 @@
 </head>
 
 <body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/path/to/masonry.pkgd.min.js"></script>
 <script>
-  $('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 160
-});
+  $(document).ready(function() {
+    // Initialize Masonry for the grid container
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: 160,  // Set the column width
+      percentPosition: true // Ensures the items position correctly
+    });
+  });
 </script>
-
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
   <?php
     while ($book = $books->fetch_assoc()) {
