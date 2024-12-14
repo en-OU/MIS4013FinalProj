@@ -42,6 +42,7 @@
   <div class="grid-item"> 
     <img src="ADEcover.jpg" style="width: 100%; height: auto; object-fit: contain;">
     </br>
+    </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
       </br>
     <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small>
