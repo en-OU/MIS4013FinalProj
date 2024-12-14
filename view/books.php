@@ -15,7 +15,7 @@
             background-position: center;
             background-attachment: fixed;
             margin: 0;
-            background-color: rgba(255, 255, 255, 0.5); // half white so it looks kind of transparent
+            background-color: rgba(255, 255, 255, 0.5); 
         }
     </style>
   
@@ -35,11 +35,11 @@
 })
 </script>
   
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+<div class="grid">
   <?php
     while ($book = $books->fetch_assoc()) {
   ?> 
-  <div class="grid-item" >
+  <div class="grid-item"> 
     <img src="ADEcover.jpg" style="width: 100%; height: auto; object-fit: contain;">
     </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
@@ -53,7 +53,6 @@
     <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
       </br>
     <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
-   </div>
 </div>
 <?php 
     }
