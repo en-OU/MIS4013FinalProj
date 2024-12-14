@@ -1,8 +1,7 @@
 <div style="text-align: center; padding: 50px;">
-  <span style="font-weight: bold; color: blue; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 15px;">Books with Genres</span>
+  <span style="background-color: white; font-weight: bold; color: #006400; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">Books By Genre</span>
   <br/>
   <br/>
-  <span style="color: violet; font-size: 20px; display: inline-block;">Books organized by genre</span>
 </div>
 
 <div class="card-group">
