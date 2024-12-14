@@ -11,7 +11,7 @@ if (!$conn)
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$authors = selectStores($conn);
+$stores = selectStores($conn);
 
 include "view/store-locations-chart.php";
 ?>
