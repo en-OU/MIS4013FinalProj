@@ -26,9 +26,12 @@
 <script src="/path/to/masonry.pkgd.min.js"></script>
 <script>
   $('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
-  columnWidth: 160
-});
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
 </script>
   
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
