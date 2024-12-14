@@ -5,13 +5,14 @@ body { font-family: sans-serif; }
 /* ---- MASONRY.js grid ---- */
 
 .grid {
+      width: 100%;
       display: flex;
       flex-wrap: wrap; 
       gap: 15px; 
       justify-content: flex-start; 
     }
 .grid-item {
-      width: 160px;
+      width: 200px;
       height: auto;
       background-color: white; 
       border: 2px solid #333;
