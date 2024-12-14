@@ -6,7 +6,7 @@
   <br/>
   <br/>
 </div>
-
+<link rel="stylesheet" href="grid-styles.css">
 <style>
         body {
             background-image: url('Bookpile.jpg');
