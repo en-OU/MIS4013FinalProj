@@ -28,13 +28,13 @@ include "header.php";
 <body>
   <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-content: center;">
      <div>
-          <span style="background-color: white; width: 400px; color: #006400; font-size: 25px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">
+          <span style="background-color: white; width: 200px; color: #006400; font-size: 25px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">
           Tattered Cover offers local book clubs offering popular books! Find out more by clicking the image.
           </span>
      </div>
      <div>
        <a href="https://www.tatteredcover.com/pages/tattered-cover-book-clubs"> 
-         <img src="TC_Book_Clubs_New_Website_Blo" alt="Button Image" style="width: 100px; height: auto;">
+         <img src="images/TC_Book_Clubs_New_Website_Block_Graphic.webp" alt="Button Image" style="width: 200px; height: auto;">
        </a>
      </div>
 </div>
