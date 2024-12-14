@@ -38,9 +38,11 @@
 <div class="grid">
   <?php
     while ($book = $books->fetch_assoc()) {
+    $bookCoverImage = "images/" . $book['BookID'] . ".jpg"; // 
+
   ?> 
   <div class="grid-item"> 
-    <img src="ADEcover.jpg" style="width: 100%; height: auto; object-fit: contain;">
+    <img src="<?php echo $bookCoverImage; ?>" style="width: 100%; height: auto; object-fit: contain;">
     </br>
     </br>
     <small class="text-body-primary"> <?php echo ($book['BookTitle']); ?> </small>
