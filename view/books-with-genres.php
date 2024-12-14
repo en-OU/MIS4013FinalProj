@@ -34,17 +34,13 @@
 })
 </script>
   
-<div class="card-group">
+<div class="grid">
 <?PHP
 
 while ($genre = $genres->fetch_assoc()) {
 ?> 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title"><?php echo $genre['GenreName']; ?></h5>
-      <p class="card-text">
-      <ul class="list-group">
-        
+   <div class="grid-item"> 
+      <small class="card-title"><?php echo $genre['GenreName']; ?></small>
       <?php
         $books = selectBooksByGenre($genre['GenreID']);
         while ($book = $books->fetch_assoc()) {
