@@ -9,8 +9,8 @@ body { font-family: sans-serif; }
       display: flex;
       flex-wrap: wrap; 
       gap: 15px; 
-      justify-content: flex-start; 
-      left-margin: 30px;
+      justify-content: center; /* Centers grid items horizontally */
+      margin: 0 auto;
     }
 .grid-item {
       width: 200px;
