@@ -8,7 +8,7 @@ function selectStores() {
         $stores = $result->fetch_all(MYSQLI_ASSOC);
         $conn->close();
 
-        return $result;
+        return $stores;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
