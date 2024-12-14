@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div id="map" style="height:180px;"></div>
+<div id="map" style="height:100px;"></div>
 <script>
       var map = L.map('map').setView([39.5501, 105.7821], 13);  // Latitude, Longitude, Zoom Level
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
