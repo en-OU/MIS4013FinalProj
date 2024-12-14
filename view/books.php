@@ -41,7 +41,7 @@
       </br>
     <small class="text-body-secondary">Author: <?php echo ($book['Author_Name']); ?></small>
     </br>
-    <small class="text-body-secondary">Publish Date: <?php ($book['PublishDate']); ?></small>
+    <small class="text-body-secondary">Publish Date: <?php echo ($book['PublishDate']); ?></small>
     </br>
     <small class="text-body-secondary">ISBN: <?php echo ($book['ISBN']); ?></small>
     </br>
