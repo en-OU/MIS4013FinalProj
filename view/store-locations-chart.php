@@ -13,15 +13,13 @@
 <body>
 <div id="map" style="height:100px;"></div>
 <script>
-      var map = L.map('map').setView([39.5501, 105.7821], 13);  // Latitude, Longitude, Zoom Level
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
      }).addTo(map);
-
      <script>
-// Assuming $stores is passed to the JS as a JSON object or encoded in a script
-var stores = <?php echo json_encode($stores); ?>; // Encode the PHP array as JSON for JavaScript
+
+var stores = <?php echo json_encode($stores); ?>; 
 
 var map = L.map('map').setView([39.5501, -105.7821], 13);
 
@@ -30,8 +28,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-     // Loop through each store to add markers
-     stores.forEach(function(store) {
+     // Loop through each store 
+         stores.forEach(function(store) {
          L.marker([store.Latitude, store.Longitude]) 
              .addTo(map)
              .bindPopup(store.StoreID);  
