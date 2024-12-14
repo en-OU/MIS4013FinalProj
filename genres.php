@@ -17,5 +17,4 @@ if (!$conn)
 
 $books = selectBooks($conn);
 
-include "view/books.php";
 ?>
