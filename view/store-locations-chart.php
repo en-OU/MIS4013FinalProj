@@ -47,12 +47,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-     // Loop through each store 
-         stores.forEach(function(store) {
-         L.marker([store.Latitude, store.Longitude]) 
-             .addTo(map)
-             .bindPopup(store.StoreID);  
-     });
+
+stores.forEach(function(store) {
+var marker = L.marker([store.Latitude, store.Longitude]).addTo(map);
+     
+         // Create a popup for each marker
+var popup = L.popup()
+.setLatLng([store.Latitude, store.Longitude])
+.setContent(store.Address + ", " + store.City + ", " + store.State)
+.openOn(map);
+         
+marker.bindPopup(popup);
+});
      
 </script>
 </body>
