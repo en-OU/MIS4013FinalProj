@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div id="map" style="height:100px;"></div>
+<div id="map" style="height:300px;"></div>
 <script>
 
 var stores = <?php echo json_encode($stores); ?>; 
