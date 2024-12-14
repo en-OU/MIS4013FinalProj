@@ -32,6 +32,8 @@
      <div>
           <span style="background-color: white; width: 400px; color: #006400; font-size: 25px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">
           Tattered Cover has four store locations across the Denver area, including one in downtown Historic Denver.
+          </br>
+          (Click markers for addresses.)
           </span>
      </div>
      <div id="map" style="height:400px; width: 400px;"></div>
