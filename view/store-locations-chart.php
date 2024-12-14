@@ -1,6 +1,11 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
+     <div style="text-align: center; padding: 50px;">
+       <span style="font-weight: bold; color: #006400; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">Tattered Cover Store Locations</span>
+       <br/>
+       <br/>
+     </div>
      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
