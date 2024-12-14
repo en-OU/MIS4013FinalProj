@@ -3,12 +3,17 @@ $pageTitle = "Home";
 include "header.php";
 ?>
 
-<div style="text-align: center; padding: 50px;> 
-  <span style="font-weight: bold; color: #006400; font-size: 70px; display: inline-block;">Home</span>
-</br>
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<div style="text-align: center; padding: 50px;">
+  <span style="background-color: white; font-weight: bold; color: #006400; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">Home</span>
+  <br/>
+  <br/>
 </div>
-
-<style>
+  
+<link rel="stylesheet" href="grid-styles.css">
+  <style>
         body {
             background-image: url('Bookpile.jpg');
             background-size: cover;
@@ -18,3 +23,8 @@ include "header.php";
             background-color: rgba(255, 255, 255, 0.5); 
         }
     </style>
+  
+</head>
+<body>
+  
+</body>
