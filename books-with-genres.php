@@ -22,5 +22,5 @@ if (!$conn)
 
 $genres = selectGenres($conn);
 
-include "view-books-with-genres.php";
+include "view/books-with-genres.php";
 ?>
