@@ -4,6 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once("util-db.php");
+require_once("model/books.php");
 
 $pageTitle = "Cart";
 include "header.php";
