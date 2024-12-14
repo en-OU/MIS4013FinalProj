@@ -27,8 +27,8 @@ include "header.php";
 </head>
 <body>
   
-<button onclick="alert('Button clicked!')">
+<a href="https://www.tatteredcover.com/pages/tattered-cover-book-clubs">
   <img src="button-image.jpg" alt="Button Image" style="width: 100px; height: auto;">
-</button>
+</a>
 
 </body>
