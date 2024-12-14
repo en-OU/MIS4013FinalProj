@@ -6,7 +6,19 @@
   <br/>
   <br/>
 </div>
+  
 <link rel="stylesheet" href="grid-styles.css">
+  <style>
+        body {
+            background-image: url('Bookpile.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.5); // half white so it looks kind of transparent
+        }
+    </style>
+  
 </head>
 
 <body>
