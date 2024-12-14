@@ -1,9 +1,15 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
 <div style="text-align: center; padding: 50px;">
   <span style="background-color: white; font-weight: bold; color: #006400; font-size: 50px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">Books By Genre</span>
   <br/>
   <br/>
 </div>
+  
+</head>
 
+<body>
 <div class="card-group">
 <?PHP
 
@@ -34,4 +40,5 @@ while ($genre = $genres->fetch_assoc()) {
 ?>
 
 </div>
-  
+</body>
+</html>
