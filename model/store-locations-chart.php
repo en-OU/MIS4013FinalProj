@@ -1,4 +1,4 @@
-<?php 
+<?php
 function selectStores() {
     try {
         $conn = get_db_connection();
