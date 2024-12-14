@@ -26,11 +26,11 @@
 <script src="/path/to/masonry.pkgd.min.js"></script>
 <script>
   $(document).ready(function() {
-    // Initialize Masonry for the grid container
+    // Initializing Masonry 
     var $grid = $('.grid').masonry({
       itemSelector: '.grid-item',
-      columnWidth: 160,  // Set the column width
-      percentPosition: true // Ensures the items position correctly
+      columnWidth: 160,  
+      percentPosition: true 
     });
   });
 </script>
