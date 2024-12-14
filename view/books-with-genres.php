@@ -35,23 +35,27 @@
 </script>
   
 <div class="grid">
-<?PHP
-while ($genre = $genres->fetch_assoc()) {
-?> 
-   <div class="grid-item"> 
+  <?php
+  while ($genre = $genres->fetch_assoc()) {
+  ?> 
+    <div class="grid-item"> 
       <small style="color:#006400; font-weight: bold; font-size: 50px;"><?php echo $genre['GenreName']; ?></small>
       <?php
         $books = selectBooksByGenre($genre['GenreID']);
         while ($book = $books->fetch_assoc()) {
       ?>
-          <small class="text-body-primary"><?php echo $book['BookTitle'];?></small>
-          </br>
-          <small class="text-body-secondary">Author: <?php echo $book['AuthorFN']; ?> <?php echo $book['AuthorLN']; ?></small>
-        <?php   
-          }
-        ?>
-    </div>
-  </div>
+        <small class="text-body-primary"><?php echo $book['BookTitle'];?></small>
+        </br>
+        <small class="text-body-secondary">Author: <?php echo $book['AuthorFN']; ?> <?php echo $book['AuthorLN']; ?></small>
+      <?php   
+        }
+      ?>
+    </div> <!-- Closing the grid-item here -->
+  <?php
+  }
+  ?>
+</div>
+
   
 <?php
 }
