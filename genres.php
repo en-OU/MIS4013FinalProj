@@ -19,4 +19,5 @@ if (!$conn)
 
 $books = selectBooks($conn);
 
+include "view/books-with-genres.php";
 ?>
