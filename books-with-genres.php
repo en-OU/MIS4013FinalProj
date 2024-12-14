@@ -20,7 +20,12 @@ if (!$conn)
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$genres = selectGenres($conn);
+try {
+    $genres = selectGenres($conn); 
+    } catch (Exception $e) {
+    echo "Error fetching genres: " . $e->getMessage();
+    exit;
+}
 
 include "view/books-with-genres.php";
 ?>
