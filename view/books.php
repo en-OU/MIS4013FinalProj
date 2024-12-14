@@ -25,15 +25,12 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/path/to/masonry.pkgd.min.js"></script>
 <script>
-  $(document).ready(function() {
-    // Initializing Masonry 
-    var $grid = $('.grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: 160,  
-      percentPosition: true 
-    });
-  });
+  $('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 160
+});
 </script>
+  
 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
   <?php
     while ($book = $books->fetch_assoc()) {
