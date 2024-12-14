@@ -1,7 +1,7 @@
 
 <?php
 require_once("util-db.php");
-include "model/store-locations-chart.php";
+require_once("model/store-locations-chart.php");
 
 $pageTitle = "Store Locations";
 include "header.php";
