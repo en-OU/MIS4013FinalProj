@@ -15,3 +15,14 @@
     }
     ?>
 </div>
+
+<form method="POST">
+    <button type="submit" name="clear_cart">Clear Cart</button>
+</form>
+
+<?php
+if (isset($_POST['clear_cart'])) {
+    unset($_SESSION['cart']);  // This will clear the cart
+}
+?>
+
