@@ -13,8 +13,7 @@
 <body>
 <div id="map" style="height:300px;"></div>
 <script>
-
-var stores = <?php echo json_encode($stores); ?>; 
+var stores = <?php echo isset($stores) ? json_encode($stores) : '[]'; ?>;
 
 var map = L.map('map').setView([39.5501, -105.7821], 13);
 
