@@ -23,7 +23,7 @@
           <a class="nav-link" href="books.php"><span style="color:#006400;">Books</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="store-locations-chart.php"><span style="color: #006400;">Store Locations</span></a>
+          <a class="nav-link" href="store-locations-chart.php"><span style="color: #006400;">Store Locations Chart</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="genres.php"><span style="color: #006400;">Genres</span></a>
