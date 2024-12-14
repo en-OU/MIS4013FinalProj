@@ -56,7 +56,15 @@
     <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
       </br>
     <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
-
+ 
+    <!-- Add to Cart Button -->
+    <form method="POST">
+      <input type="hidden" name="book_id" value="<?php echo $book['BookID']; ?>">
+      <input type="hidden" name="book_title" value="<?php echo $book['BookTitle']; ?>">
+      <input type="hidden" name="book_price" value="<?php echo $book['Price']; ?>">
+      <button type="submit" name="add_to_cart">Add to Cart</button>
+    </form>
+    
 </div>
 <?php 
     }
