@@ -23,6 +23,16 @@
 <body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+
+<script>
+  $('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
+</script>
   
 <div class="card-group">
 <?PHP
