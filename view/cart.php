@@ -46,7 +46,7 @@
 
 <?php
 if (isset($_POST['clear_cart'])) {
-    unset($_SESSION['cart']);  // This will clear the cart
+    unset($_SESSION['cart']); 
 }
 ?>
     
