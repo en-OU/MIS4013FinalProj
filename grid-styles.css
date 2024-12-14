@@ -9,9 +9,7 @@ body { font-family: sans-serif; }
       display: flex;
       flex-wrap: wrap; 
       gap: 15px; 
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      justify-content: flex-start; 
     }
 .grid-item {
       width: 200px;
