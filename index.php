@@ -27,4 +27,8 @@ include "header.php";
 </head>
 <body>
   
+<button onclick="alert('Button clicked!')">
+  <img src="button-image.jpg" alt="Button Image" style="width: 100px; height: auto;">
+</button>
+
 </body>
