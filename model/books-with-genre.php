@@ -1,5 +1,5 @@
 <?php
-function selectGenres($conn) {
+function selectGenres() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("Select GenreID, GenreName from genres;");
