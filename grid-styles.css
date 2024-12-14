@@ -10,6 +10,7 @@ body { font-family: sans-serif; }
       flex-wrap: wrap; 
       gap: 15px; 
       justify-content: flex-start; 
+      left-margin: 30px;
     }
 .grid-item {
       width: 200px;
