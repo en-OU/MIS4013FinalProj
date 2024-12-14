@@ -13,11 +13,6 @@
 <body>
 <div id="map" style="height:100px;"></div>
 <script>
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-     }).addTo(map);
-     <script>
 
 var stores = <?php echo json_encode($stores); ?>; 
 
@@ -34,8 +29,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
              .addTo(map)
              .bindPopup(store.StoreID);  
      });
-</script>
-
+     
 </script>
 </body>
 </html>
