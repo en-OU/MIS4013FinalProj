@@ -20,7 +20,7 @@
 <script>
 var stores = <?php echo isset($stores) ? json_encode($stores) : '[]'; ?>;
 
-var map = L.map('map').setView([39.75, -105.0020], 13);
+var map = L.map('map').setView([39.75, -105.0020], 10);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
