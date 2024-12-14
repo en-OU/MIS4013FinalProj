@@ -51,7 +51,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 stores.forEach(function(store) {
 var marker = L.marker([store.Latitude, store.Longitude]).addTo(map);
      
-         // Create a popup for each marker
 var popup = L.popup()
 .setLatLng([store.Latitude, store.Longitude])
 .setContent(store.Address + ", " + store.City + ", " + store.State)
