@@ -1,3 +1,31 @@
+<?php
+session_start();  // Start the session to store cart data
+
+// If the 'add_to_cart' form is submitted
+if (isset($_POST['add_to_cart'])) {
+    $book_id = $_POST['book_id'];
+    $book_title = $_POST['book_title'];
+    $book_price = $_POST['book_price'];
+    
+    // Check if the cart already exists, create it if not
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array();
+    }
+    
+    // Add the book to the cart (using its ID as a key)
+    if (isset($_SESSION['cart'][$book_id])) {
+        // If the book already exists in the cart, just increase the quantity
+        $_SESSION['cart'][$book_id]['quantity'] += 1;
+    } else {
+        // If the book is not in the cart, add it
+        $_SESSION['cart'][$book_id] = array(
+            'title' => $book_title,
+            'price' => $book_price,
+            'quantity' => 1
+        );
+    }
+}
+?>
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -56,6 +84,15 @@
     <small class="text-body-secondary">Price: $ <?php echo ($book['Price']); ?></small>
       </br>
     <small class="text-body-secondary">Rating: <?php echo ($book['Rating']); ?></small>
+
+    <!-- Add to Cart Button -->
+    <form method="POST">
+      <input type="hidden" name="book_id" value="<?php echo $book['BookID']; ?>">
+      <input type="hidden" name="book_title" value="<?php echo $book['BookTitle']; ?>">
+      <input type="hidden" name="book_price" value="<?php echo $book['Price']; ?>">
+      <button type="submit" name="add_to_cart">Add to Cart</button>
+    </form>
+    
 </div>
 <?php 
     }
