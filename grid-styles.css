@@ -9,7 +9,7 @@ body { font-family: sans-serif; }
       display: flex;
       flex-wrap: wrap; 
       gap: 15px; 
-      justify-content: center; /* Centers grid items horizontally */
+      justify-content: center; 
       margin: 0 auto;
     }
 .grid-item {
