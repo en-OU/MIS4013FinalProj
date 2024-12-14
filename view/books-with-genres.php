@@ -40,6 +40,7 @@
   ?> 
     <div class="grid-item"> 
       <small style="color:#006400; font-weight: bold; font-size: 25px;"><?php echo $genre['GenreName']; ?></small>
+      </br>
       <?php
         $books = selectBooksByGenre($genre['GenreID']);
         while ($book = $books->fetch_assoc()) {
