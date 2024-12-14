@@ -13,6 +13,17 @@
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+
+     <style>
+        body {
+            background-image: url('.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.5); // half white so it looks kind of transparent
+        }
+    </style>
 </head>
 
 <body>
