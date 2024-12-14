@@ -29,7 +29,7 @@ include "header.php";
   <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-content: center;">
      <div>
           <span style="background-color: white; width: 200px; color: #006400; font-size: 25px; border-style: dashed; border-radius: 10px; border-width: 2px; display: inline-block; padding: 10px;">
-          Tattered Cover offers local book clubs offering popular books! Find out more by clicking the image.
+          Tattered Cover offers local book clubs for popular books! Find out more by clicking the image.
           </span>
      </div>
      <div>
