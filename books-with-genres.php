@@ -7,7 +7,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once("util-db.php");
-require_once("model/books-with-genres.php");
+require_once("model/books-with-genre.php");
 require_once("model/books.php");
 
 
@@ -27,5 +27,5 @@ try {
     exit;
 }
 
-include "view/books-with-genres.php";
+include "view/books-with-genre.php";
 ?>
