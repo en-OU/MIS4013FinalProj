@@ -39,7 +39,7 @@
 while ($genre = $genres->fetch_assoc()) {
 ?> 
    <div class="grid-item"> 
-      <small class="text-body-primary"><?php echo $genre['GenreName']; ?></small>
+      <small style="color:#006400; font-weight: bold; font-size: 50px;"><?php echo $genre['GenreName']; ?></small>
       <?php
         $books = selectBooksByGenre($genre['GenreID']);
         while ($book = $books->fetch_assoc()) {
